@@ -29,7 +29,26 @@ app.use(cors());
 app.use(bodyParser.json());
 
 (async () => {
-    const config = getConfigReader(process.env.CONFIG);
+    
+    //const config = getConfigReader(process.env.CONFIG);
+
+    app.locals.logger = winston.createLogger({
+        transports: [new winston.transports.Console()],
+    });
+
+    const configString = JSON.stringify({
+        "0x49e0AeC78ec0dF50852E99116E524a43bE91B789": {
+            "type":          "optimism-bedrock",
+            "handlerUrl":    "http://localhost:8887",
+            "l1ProviderUrl": "https://eth-goerli.g.alchemy.com/v2/tUTlvOS8uBoP5SqTOlV91Hb3gaVTf816",
+            "l2ProviderUrl": "https://opt-goerli.g.alchemy.com/v2/rTbd7myQ6pGvD1L4SEN171Sft4BG-uVZ",
+            "l1chainId":     "5",
+            "l2chainId":     "420"
+        }
+    });
+
+    const config = getConfigReader(configString);
+
     app.use("/", ccipGateway(config));
 })();
 const port = process.env.PORT || "8081";
