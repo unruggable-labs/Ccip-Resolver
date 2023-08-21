@@ -5,6 +5,10 @@ import {CcipResponseVerifier} from "../CcipResponseVerifier.sol";
 import {SignatureVerifier} from "./SignatureVerifier.sol";
 import {convertEVMChainIdToCoinType} from "../../coinType/Ensip11CoinType.sol";
 
+/**
+ * @notice A type specific handler for verifying the validity of data returned by
+ * a gateway that has been signed with a specific private key
+ */ 
 contract SignatureCcipVerifier is CcipResponseVerifier {
     string public name;
     address public immutable resolver;

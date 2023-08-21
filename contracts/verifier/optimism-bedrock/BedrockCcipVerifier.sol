@@ -5,6 +5,10 @@ import {CcipResponseVerifier} from "../CcipResponseVerifier.sol";
 import {IBedrockProofVerifier} from "./IBedrockProofVerifier.sol";
 import {convertEVMChainIdToCoinType} from "../../coinType/Ensip11CoinType.sol";
 
+/**
+ * @notice A type specific handler for verifying the validity of data returned by
+ * a gateway that pulls data from Optimism Bedrock
+ */ 
 contract BedrockCcipVerifier is CcipResponseVerifier {
     IBedrockProofVerifier public immutable bedrockProofVerifier;
     address public immutable target;
