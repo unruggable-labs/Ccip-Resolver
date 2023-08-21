@@ -1,0 +1,20 @@
+{
+  "5": {
+    "goerli": {
+      "name": "goerli",
+      "chainId": "5",
+      "contracts": {
+        "BedrockProofVerifier": {
+          "address": "0x2231dA800580E27cAA4C45C43b2B6c1D1487eC6F"
+        }
+      }
+    }
+  },
+  "31337": {
+    "hardhat": {
+      "name": "hardhat",
+      "chainId": "31337",
+      "contracts": {}
+    }
+  }
+}

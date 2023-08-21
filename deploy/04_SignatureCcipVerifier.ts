@@ -1,13 +1,19 @@
 import hre, { ethers } from 'hardhat';
+import json from '../exported-contracts.json' assert {type: 'json'};
 
-const CCIP_RESOLVER_ADDRESS = '0x49e0AeC78ec0dF50852E99116E524a43bE91B789';
 const NAME = 'SignatureCcipVerifier';
 const GraphQlUrl = 'http://localhost:8081/graphql';
 async function main() {
+
+    const chainId = hre.network.config.chainId;
+    const networkName = hre.network.name;
+    const contracts = json[chainId][networkName]["contracts"];
+    const erc3668ResolverAddress = contracts["ERC3668Resolver"]["address"];
+
     const [signer] = await ethers.getSigners();
 
     const SignatureVerifier = await ethers.getContractFactory('SignatureCcipVerifier');
-    const deployTx = await SignatureVerifier.deploy(signer.address, GraphQlUrl, NAME, CCIP_RESOLVER_ADDRESS, [
+    const deployTx = await SignatureVerifier.deploy(signer.address, GraphQlUrl, NAME, erc3668ResolverAddress, [
         signer.address,
     ]);
     await deployTx.deployed();

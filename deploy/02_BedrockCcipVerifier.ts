@@ -1,17 +1,23 @@
 import hre, { ethers } from 'hardhat';
+import json from '../exported-contracts.json' assert {type: 'json'};
 
 async function main() {
+
+    const chainId = hre.network.config.chainId;
+    const networkName = hre.network.name;
+    const contracts = json[chainId][networkName]["contracts"];
+
     const [owner] = await ethers.getSigners();
     const graphQlUrl = 'http://localhost:8081/graphql';
-    const bedrockProofVerifierAddress = '0x49FA2e3dc397d6AcA8e2DAe402eB2fD6164EebAC';
-    const l2ResolverAddress = '0x39Dc8A3A607970FA9F417D284E958D4cA69296C8';
+    const bedrockProofVerifierAddress = contracts["BedrockProofVerifier"]["address"];
+    const erc3668ResolverAddress = contracts["ERC3668Resolver"]["address"];
 
-    const BedrockProofVerifierFactory = await ethers.getContractFactory('BedrockCcipVerifier');
+    const BedrockCcipVerifierFactory = await ethers.getContractFactory('BedrockCcipVerifier');
     const deployTx = await BedrockProofVerifierFactory.deploy(
         owner.address,
         graphQlUrl,
         bedrockProofVerifierAddress,
-        l2ResolverAddress,
+        erc3668ResolverAddress,
     );
     await deployTx.deployed();
 

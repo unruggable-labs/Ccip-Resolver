@@ -17,6 +17,7 @@ import 'solidity-coverage';
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY;
 const OPTIMISTIC_ETHERSCAN_API_KEY = process.env.OPTIMISTIC_ETHERSCAN_API_KEY;
 
+const MAINNET_URL = process.env.MAINNET_RPC_URL ?? '';
 const GOERLI_URL = process.env.GOERLI_RPC_URL ?? '';
 const DEPLOYER_PRIVATE_KEY = process.env.DEPLOYER_PRIVATE_KEY ?? ethers.Wallet.createRandom().privateKey;
 
@@ -33,12 +34,19 @@ module.exports = {
     defaultNetwork: 'hardhat',
     networks: {
         hardhat,
+        mainnet: {
+            url: MAINNET_URL,
+            chainId: 1,
+            accounts: [DEPLOYER_PRIVATE_KEY],
+        },
         optimismGoerli: {
             url: 'https://goerli.optimism.io',
+            chainId: 420,
             accounts: [DEPLOYER_PRIVATE_KEY],
         },
         goerli: {
             url: GOERLI_URL,
+            chainId: 5,
             accounts: [DEPLOYER_PRIVATE_KEY],
         },
         localhost: {},

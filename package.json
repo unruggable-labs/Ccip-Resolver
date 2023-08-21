@@ -19,6 +19,7 @@
         "deploy:ccip-resolver-goerli": "npx hardhat run ./deploy/02_ERC3668Resolver.ts --network goerli",
         "deploy:ccip-resolver-mainnet": "npx hardhat run ./deploy/02_ERC3668Resolver.ts --network mainnet",
         "docker:build": "docker build -t ccip-resolver -f ./Dockerfile .",
+        "export": "npx hardhat export --export-all ./exported-contracts.json",
         "build": "yarn hardhat compile && yarn tsc -p tsconfig-build.json",
         "start": "node dist/gateway/index.js"
     },
