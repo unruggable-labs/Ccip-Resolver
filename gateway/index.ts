@@ -1,3 +1,4 @@
+import path from 'path';
 import * as dotenv from "dotenv";
 import bodyParser from "body-parser";
 import express from "express";
@@ -8,7 +9,7 @@ import winston from "winston";
 import { ccipGateway } from "./http/ccipGateway";
 import { getConfigReader } from "./config/ConfigReader";
 
-dotenv.config();
+dotenv.config({ path: __dirname});
 
 declare global {
     var logger: winston.Logger
@@ -39,7 +40,7 @@ app.use(bodyParser.json());
     const configString = JSON.stringify({
         "0x49e0AeC78ec0dF50852E99116E524a43bE91B789": {
             "type":          "optimism-bedrock",
-            "handlerUrl":    "http://localhost:8887",
+            "handlerUrl":    "https://ens.unruggablegateway.com",
             "l1ProviderUrl": "https://eth-goerli.g.alchemy.com/v2/tUTlvOS8uBoP5SqTOlV91Hb3gaVTf816",
             "l2ProviderUrl": "https://opt-goerli.g.alchemy.com/v2/rTbd7myQ6pGvD1L4SEN171Sft4BG-uVZ",
             "l1chainId":     "5",
