@@ -1,0 +1,7 @@
+screen -t 'Run Ccip-Resolver'
+select 0
+stuff "node /home/unruggable-gateway/Ccip-Resolver/dist/gateway/index.js^M"
+
+screen -t 'Run ENS-Bedrock-Resolver'
+select 1
+stuff "node /home/unruggable-gateway/ENS-Bedrock-Resolver/dist/server/index.js^M"
