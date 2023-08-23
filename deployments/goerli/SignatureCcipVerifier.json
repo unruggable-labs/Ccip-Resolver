@@ -1,0 +1,537 @@
+{
+  "address": "0xec18bD50FB4510450Ce58540d839E62Bb46df7e7",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_owner",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "_graphQlUrl",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_name",
+          "type": "string"
+        },
+        {
+          "internalType": "address",
+          "name": "_resolver",
+          "type": "address"
+        },
+        {
+          "internalType": "address[]",
+          "name": "_signers",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "newGraphQlUrl",
+          "type": "string"
+        }
+      ],
+      "name": "GraphQlUrlChanged",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "NewOwner",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address[]",
+          "name": "signers",
+          "type": "address[]"
+        }
+      ],
+      "name": "NewSigners",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnerChanged",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "removedSigner",
+          "type": "address"
+        }
+      ],
+      "name": "SignerRemoved",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "_signers",
+          "type": "address[]"
+        }
+      ],
+      "name": "addSigners",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "graphqlUrl",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "name": "metadata",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        },
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "name",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "name": "onResolveWithProof",
+      "outputs": [
+        {
+          "internalType": "bytes4",
+          "name": "",
+          "type": "bytes4"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "_signers",
+          "type": "address[]"
+        }
+      ],
+      "name": "removeSigners",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "response",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes",
+          "name": "extraData",
+          "type": "bytes"
+        }
+      ],
+      "name": "resolveWithProof",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "resolver",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_graphqlUrl",
+          "type": "string"
+        }
+      ],
+      "name": "setGraphUrl",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_owner",
+          "type": "address"
+        }
+      ],
+      "name": "setOwner",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "signers",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes4",
+          "name": "interfaceID",
+          "type": "bytes4"
+        }
+      ],
+      "name": "supportsInterface",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xbfb0b960cf2e4846723f0ef10aa5bdf2a8aef3cad4174368f0757ddd73867e39",
+  "receipt": {
+    "to": null,
+    "from": "0xFC04D70bea992Da2C67995BbddC3500767394513",
+    "contractAddress": "0xec18bD50FB4510450Ce58540d839E62Bb46df7e7",
+    "transactionIndex": 21,
+    "gasUsed": "1527098",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000800000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000200000000000000000000000",
+    "blockHash": "0x28b090fb6b3fb1547ff65fe89df6229422b3d00aa87c7e011c11066cc695c411",
+    "transactionHash": "0xbfb0b960cf2e4846723f0ef10aa5bdf2a8aef3cad4174368f0757ddd73867e39",
+    "logs": [
+      {
+        "transactionIndex": 21,
+        "blockNumber": 9556329,
+        "transactionHash": "0xbfb0b960cf2e4846723f0ef10aa5bdf2a8aef3cad4174368f0757ddd73867e39",
+        "address": "0xec18bD50FB4510450Ce58540d839E62Bb46df7e7",
+        "topics": [
+          "0xab0b9cc3a46b568cb08d985497cde8ab7e18892d01f58db7dc7f0d2af859b2d7"
+        ],
+        "data": "0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000001000000000000000000000000fc04d70bea992da2c67995bbddc3500767394513",
+        "logIndex": 35,
+        "blockHash": "0x28b090fb6b3fb1547ff65fe89df6229422b3d00aa87c7e011c11066cc695c411"
+      }
+    ],
+    "blockNumber": 9556329,
+    "cumulativeGasUsed": "8167026",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0xFC04D70bea992Da2C67995BbddC3500767394513",
+    "http://localhost:8081/graphql",
+    "SignatureCcipVerifier",
+    "0x2389Cda3D5960fA4ce08162E2436AFA68Ef5BE85",
+    [
+      "0xFC04D70bea992Da2C67995BbddC3500767394513"
+    ]
+  ],
+  "numDeployments": 1,
+  "solcInputHash": "0445fa0d01b10caeaef9d49402886916",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_owner\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"_graphQlUrl\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_name\",\"type\":\"string\"},{\"internalType\":\"address\",\"name\":\"_resolver\",\"type\":\"address\"},{\"internalType\":\"address[]\",\"name\":\"_signers\",\"type\":\"address[]\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"newGraphQlUrl\",\"type\":\"string\"}],\"name\":\"GraphQlUrlChanged\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"NewOwner\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address[]\",\"name\":\"signers\",\"type\":\"address[]\"}],\"name\":\"NewSigners\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnerChanged\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"removedSigner\",\"type\":\"address\"}],\"name\":\"SignerRemoved\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"_signers\",\"type\":\"address[]\"}],\"name\":\"addSigners\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"graphqlUrl\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"metadata\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"onResolveWithProof\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"_signers\",\"type\":\"address[]\"}],\"name\":\"removeSigners\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"response\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"extraData\",\"type\":\"bytes\"}],\"name\":\"resolveWithProof\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"resolver\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_graphqlUrl\",\"type\":\"string\"}],\"name\":\"setGraphUrl\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_owner\",\"type\":\"address\"}],\"name\":\"setOwner\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"signers\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceID\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"addSigners(address[])\":{\"details\":\"This function can only be called by the current contract owner. It adds the provided addresses as new signers.\",\"params\":{\"_signers\":\"An array of addresses representing the new signers to be added\"}},\"metadata(bytes)\":{\"details\":\"This function provides metadata about the CCIP Resolver, including its name, coin type, GraphQL URL, storage type, and encoded information.\",\"returns\":{\"_0\":\"name The name of the resolver (\\\"CCIP RESOLVER\\\")\",\"_1\":\"coinType Resolvers coin type (60 for Ethereum)\",\"_2\":\"graphqlUrl The GraphQL URL used by the resolver\",\"_3\":\"storageType Storage Type (0 for EVM)\",\"_4\":\"storageLocation The storage identifier. For EVM chains, this is the address of the resolver contract.\",\"_5\":\"context The owner of the name. Always returns address(0) since the owner is determined by the erc3668Resolver contract.\"}},\"onResolveWithProof(bytes,bytes)\":{\"returns\":{\"_0\":\"The function selector of the `resolveWithProof` function\"}},\"removeSigners(address[])\":{\"details\":\"This function can only be called by the current contract owner. It removes the provided addresses from the list of authorized signers.\",\"params\":{\"_signers\":\"An array of addresses representing the signers to be removed\"}},\"resolveWithProof(bytes,bytes)\":{\"details\":\"This function is used to resolve a response with a proof using the SignatureVerifier.\",\"params\":{\"extraData\":\"Additional data needed for verification\",\"response\":\"The response data returned from the SignatureVerifier\"},\"returns\":{\"_0\":\"The decoded response data Note: It's essential to handle access control mechanisms properly to ensure that only authorized signers can resolve responses with proofs.\"}},\"setGraphUrl(string)\":{\"details\":\"This function can only be called by the current owner.\",\"params\":{\"_graphqlUrl\":\"The new GraphQL endpoint URL to be set\"}},\"setOwner(address)\":{\"details\":\"This function can only be called by the current owner.\",\"params\":{\"_owner\":\"The address of the new owner\"}},\"supportsInterface(bytes4)\":{\"details\":\"This function checks if the contract supports the provided interface by comparing the `interfaceID` with the supported interface IDs.\",\"params\":{\"interfaceID\":\"The interface ID to check for support\"},\"returns\":{\"_0\":\"true if the contract supports the interface, false otherwise\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"addSigners(address[])\":{\"notice\":\"Add new signers\"},\"metadata(bytes)\":{\"notice\":\"Get metadata about the CCIP Resolver\"},\"onResolveWithProof(bytes,bytes)\":{\"notice\":\"To support other to be resolved than just bytes it is possible to override this function. In that case the function selector of the overridden function should be returned. The default implementation returns the function selector of the `resolveWithProof` function.\"},\"owner()\":{\"notice\":\"The owner of the contract The owner of the contract can set the graphQlUrl and determine a new owner\"},\"removeSigners(address[])\":{\"notice\":\"Remove signers\"},\"resolveWithProof(bytes,bytes)\":{\"notice\":\"Resolve with Proof\"},\"setGraphUrl(string)\":{\"notice\":\"Set the GraphQL endpoint URL for the contract\"},\"setOwner(address)\":{\"notice\":\"Set the new owner of the contract\"},\"supportsInterface(bytes4)\":{\"notice\":\"Check if the contract supports the given interface\"}},\"notice\":\"A type specific handler for verifying the validity of data returned by a gateway that has been signed with a specific private key\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/verifier/signature/SignatureCcipVerifier.sol\":\"SignatureCcipVerifier\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"details\":{\"constantOptimizer\":true,\"cse\":true,\"deduplicate\":true,\"inliner\":true,\"jumpdestRemover\":true,\"orderLiterals\":true,\"peephole\":true,\"yul\":true,\"yulDetails\":{\"optimizerSteps\":\"u\",\"stackAllocation\":true}},\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"@openzeppelin/contracts/utils/Strings.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.9.0) (utils/Strings.sol)\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"./math/Math.sol\\\";\\nimport \\\"./math/SignedMath.sol\\\";\\n\\n/**\\n * @dev String operations.\\n */\\nlibrary Strings {\\n    bytes16 private constant _SYMBOLS = \\\"0123456789abcdef\\\";\\n    uint8 private constant _ADDRESS_LENGTH = 20;\\n\\n    /**\\n     * @dev Converts a `uint256` to its ASCII `string` decimal representation.\\n     */\\n    function toString(uint256 value) internal pure returns (string memory) {\\n        unchecked {\\n            uint256 length = Math.log10(value) + 1;\\n            string memory buffer = new string(length);\\n            uint256 ptr;\\n            /// @solidity memory-safe-assembly\\n            assembly {\\n                ptr := add(buffer, add(32, length))\\n            }\\n            while (true) {\\n                ptr--;\\n                /// @solidity memory-safe-assembly\\n                assembly {\\n                    mstore8(ptr, byte(mod(value, 10), _SYMBOLS))\\n                }\\n                value /= 10;\\n                if (value == 0) break;\\n            }\\n            return buffer;\\n        }\\n    }\\n\\n    /**\\n     * @dev Converts a `int256` to its ASCII `string` decimal representation.\\n     */\\n    function toString(int256 value) internal pure returns (string memory) {\\n        return string(abi.encodePacked(value < 0 ? \\\"-\\\" : \\\"\\\", toString(SignedMath.abs(value))));\\n    }\\n\\n    /**\\n     * @dev Converts a `uint256` to its ASCII `string` hexadecimal representation.\\n     */\\n    function toHexString(uint256 value) internal pure returns (string memory) {\\n        unchecked {\\n            return toHexString(value, Math.log256(value) + 1);\\n        }\\n    }\\n\\n    /**\\n     * @dev Converts a `uint256` to its ASCII `string` hexadecimal representation with fixed length.\\n     */\\n    function toHexString(uint256 value, uint256 length) internal pure returns (string memory) {\\n        bytes memory buffer = new bytes(2 * length + 2);\\n        buffer[0] = \\\"0\\\";\\n        buffer[1] = \\\"x\\\";\\n        for (uint256 i = 2 * length + 1; i > 1; --i) {\\n            buffer[i] = _SYMBOLS[value & 0xf];\\n            value >>= 4;\\n        }\\n        require(value == 0, \\\"Strings: hex length insufficient\\\");\\n        return string(buffer);\\n    }\\n\\n    /**\\n     * @dev Converts an `address` with fixed length of 20 bytes to its not checksummed ASCII `string` hexadecimal representation.\\n     */\\n    function toHexString(address addr) internal pure returns (string memory) {\\n        return toHexString(uint256(uint160(addr)), _ADDRESS_LENGTH);\\n    }\\n\\n    /**\\n     * @dev Returns true if the two strings are equal.\\n     */\\n    function equal(string memory a, string memory b) internal pure returns (bool) {\\n        return keccak256(bytes(a)) == keccak256(bytes(b));\\n    }\\n}\\n\",\"keccak256\":\"0x3088eb2868e8d13d89d16670b5f8612c4ab9ff8956272837d8e90106c59c14a0\",\"license\":\"MIT\"},\"@openzeppelin/contracts/utils/cryptography/ECDSA.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.9.0) (utils/cryptography/ECDSA.sol)\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../Strings.sol\\\";\\n\\n/**\\n * @dev Elliptic Curve Digital Signature Algorithm (ECDSA) operations.\\n *\\n * These functions can be used to verify that a message was signed by the holder\\n * of the private keys of a given address.\\n */\\nlibrary ECDSA {\\n    enum RecoverError {\\n        NoError,\\n        InvalidSignature,\\n        InvalidSignatureLength,\\n        InvalidSignatureS,\\n        InvalidSignatureV // Deprecated in v4.8\\n    }\\n\\n    function _throwError(RecoverError error) private pure {\\n        if (error == RecoverError.NoError) {\\n            return; // no error: do nothing\\n        } else if (error == RecoverError.InvalidSignature) {\\n            revert(\\\"ECDSA: invalid signature\\\");\\n        } else if (error == RecoverError.InvalidSignatureLength) {\\n            revert(\\\"ECDSA: invalid signature length\\\");\\n        } else if (error == RecoverError.InvalidSignatureS) {\\n            revert(\\\"ECDSA: invalid signature 's' value\\\");\\n        }\\n    }\\n\\n    /**\\n     * @dev Returns the address that signed a hashed message (`hash`) with\\n     * `signature` or error string. This address can then be used for verification purposes.\\n     *\\n     * The `ecrecover` EVM opcode allows for malleable (non-unique) signatures:\\n     * this function rejects them by requiring the `s` value to be in the lower\\n     * half order, and the `v` value to be either 27 or 28.\\n     *\\n     * IMPORTANT: `hash` _must_ be the result of a hash operation for the\\n     * verification to be secure: it is possible to craft signatures that\\n     * recover to arbitrary addresses for non-hashed data. A safe way to ensure\\n     * this is by receiving a hash of the original message (which may otherwise\\n     * be too long), and then calling {toEthSignedMessageHash} on it.\\n     *\\n     * Documentation for signature generation:\\n     * - with https://web3js.readthedocs.io/en/v1.3.4/web3-eth-accounts.html#sign[Web3.js]\\n     * - with https://docs.ethers.io/v5/api/signer/#Signer-signMessage[ethers]\\n     *\\n     * _Available since v4.3._\\n     */\\n    function tryRecover(bytes32 hash, bytes memory signature) internal pure returns (address, RecoverError) {\\n        if (signature.length == 65) {\\n            bytes32 r;\\n            bytes32 s;\\n            uint8 v;\\n            // ecrecover takes the signature parameters, and the only way to get them\\n            // currently is to use assembly.\\n            /// @solidity memory-safe-assembly\\n            assembly {\\n                r := mload(add(signature, 0x20))\\n                s := mload(add(signature, 0x40))\\n                v := byte(0, mload(add(signature, 0x60)))\\n            }\\n            return tryRecover(hash, v, r, s);\\n        } else {\\n            return (address(0), RecoverError.InvalidSignatureLength);\\n        }\\n    }\\n\\n    /**\\n     * @dev Returns the address that signed a hashed message (`hash`) with\\n     * `signature`. This address can then be used for verification purposes.\\n     *\\n     * The `ecrecover` EVM opcode allows for malleable (non-unique) signatures:\\n     * this function rejects them by requiring the `s` value to be in the lower\\n     * half order, and the `v` value to be either 27 or 28.\\n     *\\n     * IMPORTANT: `hash` _must_ be the result of a hash operation for the\\n     * verification to be secure: it is possible to craft signatures that\\n     * recover to arbitrary addresses for non-hashed data. A safe way to ensure\\n     * this is by receiving a hash of the original message (which may otherwise\\n     * be too long), and then calling {toEthSignedMessageHash} on it.\\n     */\\n    function recover(bytes32 hash, bytes memory signature) internal pure returns (address) {\\n        (address recovered, RecoverError error) = tryRecover(hash, signature);\\n        _throwError(error);\\n        return recovered;\\n    }\\n\\n    /**\\n     * @dev Overload of {ECDSA-tryRecover} that receives the `r` and `vs` short-signature fields separately.\\n     *\\n     * See https://eips.ethereum.org/EIPS/eip-2098[EIP-2098 short signatures]\\n     *\\n     * _Available since v4.3._\\n     */\\n    function tryRecover(bytes32 hash, bytes32 r, bytes32 vs) internal pure returns (address, RecoverError) {\\n        bytes32 s = vs & bytes32(0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff);\\n        uint8 v = uint8((uint256(vs) >> 255) + 27);\\n        return tryRecover(hash, v, r, s);\\n    }\\n\\n    /**\\n     * @dev Overload of {ECDSA-recover} that receives the `r and `vs` short-signature fields separately.\\n     *\\n     * _Available since v4.2._\\n     */\\n    function recover(bytes32 hash, bytes32 r, bytes32 vs) internal pure returns (address) {\\n        (address recovered, RecoverError error) = tryRecover(hash, r, vs);\\n        _throwError(error);\\n        return recovered;\\n    }\\n\\n    /**\\n     * @dev Overload of {ECDSA-tryRecover} that receives the `v`,\\n     * `r` and `s` signature fields separately.\\n     *\\n     * _Available since v4.3._\\n     */\\n    function tryRecover(bytes32 hash, uint8 v, bytes32 r, bytes32 s) internal pure returns (address, RecoverError) {\\n        // EIP-2 still allows signature malleability for ecrecover(). Remove this possibility and make the signature\\n        // unique. Appendix F in the Ethereum Yellow paper (https://ethereum.github.io/yellowpaper/paper.pdf), defines\\n        // the valid range for s in (301): 0 < s < secp256k1n \\u00f7 2 + 1, and for v in (302): v \\u2208 {27, 28}. Most\\n        // signatures from current libraries generate a unique signature with an s-value in the lower half order.\\n        //\\n        // If your library generates malleable signatures, such as s-values in the upper range, calculate a new s-value\\n        // with 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141 - s1 and flip v from 27 to 28 or\\n        // vice versa. If your library also generates signatures with 0/1 for v instead 27/28, add 27 to v to accept\\n        // these malleable signatures as well.\\n        if (uint256(s) > 0x7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5D576E7357A4501DDFE92F46681B20A0) {\\n            return (address(0), RecoverError.InvalidSignatureS);\\n        }\\n\\n        // If the signature is valid (and not malleable), return the signer address\\n        address signer = ecrecover(hash, v, r, s);\\n        if (signer == address(0)) {\\n            return (address(0), RecoverError.InvalidSignature);\\n        }\\n\\n        return (signer, RecoverError.NoError);\\n    }\\n\\n    /**\\n     * @dev Overload of {ECDSA-recover} that receives the `v`,\\n     * `r` and `s` signature fields separately.\\n     */\\n    function recover(bytes32 hash, uint8 v, bytes32 r, bytes32 s) internal pure returns (address) {\\n        (address recovered, RecoverError error) = tryRecover(hash, v, r, s);\\n        _throwError(error);\\n        return recovered;\\n    }\\n\\n    /**\\n     * @dev Returns an Ethereum Signed Message, created from a `hash`. This\\n     * produces hash corresponding to the one signed with the\\n     * https://eth.wiki/json-rpc/API#eth_sign[`eth_sign`]\\n     * JSON-RPC method as part of EIP-191.\\n     *\\n     * See {recover}.\\n     */\\n    function toEthSignedMessageHash(bytes32 hash) internal pure returns (bytes32 message) {\\n        // 32 is the length in bytes of hash,\\n        // enforced by the type signature above\\n        /// @solidity memory-safe-assembly\\n        assembly {\\n            mstore(0x00, \\\"\\\\x19Ethereum Signed Message:\\\\n32\\\")\\n            mstore(0x1c, hash)\\n            message := keccak256(0x00, 0x3c)\\n        }\\n    }\\n\\n    /**\\n     * @dev Returns an Ethereum Signed Message, created from `s`. This\\n     * produces hash corresponding to the one signed with the\\n     * https://eth.wiki/json-rpc/API#eth_sign[`eth_sign`]\\n     * JSON-RPC method as part of EIP-191.\\n     *\\n     * See {recover}.\\n     */\\n    function toEthSignedMessageHash(bytes memory s) internal pure returns (bytes32) {\\n        return keccak256(abi.encodePacked(\\\"\\\\x19Ethereum Signed Message:\\\\n\\\", Strings.toString(s.length), s));\\n    }\\n\\n    /**\\n     * @dev Returns an Ethereum Signed Typed Data, created from a\\n     * `domainSeparator` and a `structHash`. This produces hash corresponding\\n     * to the one signed with the\\n     * https://eips.ethereum.org/EIPS/eip-712[`eth_signTypedData`]\\n     * JSON-RPC method as part of EIP-712.\\n     *\\n     * See {recover}.\\n     */\\n    function toTypedDataHash(bytes32 domainSeparator, bytes32 structHash) internal pure returns (bytes32 data) {\\n        /// @solidity memory-safe-assembly\\n        assembly {\\n            let ptr := mload(0x40)\\n            mstore(ptr, \\\"\\\\x19\\\\x01\\\")\\n            mstore(add(ptr, 0x02), domainSeparator)\\n            mstore(add(ptr, 0x22), structHash)\\n            data := keccak256(ptr, 0x42)\\n        }\\n    }\\n\\n    /**\\n     * @dev Returns an Ethereum Signed Data with intended validator, created from a\\n     * `validator` and `data` according to the version 0 of EIP-191.\\n     *\\n     * See {recover}.\\n     */\\n    function toDataWithIntendedValidatorHash(address validator, bytes memory data) internal pure returns (bytes32) {\\n        return keccak256(abi.encodePacked(\\\"\\\\x19\\\\x00\\\", validator, data));\\n    }\\n}\\n\",\"keccak256\":\"0x809bc3edb4bcbef8263fa616c1b60ee0004b50a8a1bfa164d8f57fd31f520c58\",\"license\":\"MIT\"},\"@openzeppelin/contracts/utils/math/Math.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.9.0) (utils/math/Math.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Standard math utilities missing in the Solidity language.\\n */\\nlibrary Math {\\n    enum Rounding {\\n        Down, // Toward negative infinity\\n        Up, // Toward infinity\\n        Zero // Toward zero\\n    }\\n\\n    /**\\n     * @dev Returns the largest of two numbers.\\n     */\\n    function max(uint256 a, uint256 b) internal pure returns (uint256) {\\n        return a > b ? a : b;\\n    }\\n\\n    /**\\n     * @dev Returns the smallest of two numbers.\\n     */\\n    function min(uint256 a, uint256 b) internal pure returns (uint256) {\\n        return a < b ? a : b;\\n    }\\n\\n    /**\\n     * @dev Returns the average of two numbers. The result is rounded towards\\n     * zero.\\n     */\\n    function average(uint256 a, uint256 b) internal pure returns (uint256) {\\n        // (a + b) / 2 can overflow.\\n        return (a & b) + (a ^ b) / 2;\\n    }\\n\\n    /**\\n     * @dev Returns the ceiling of the division of two numbers.\\n     *\\n     * This differs from standard division with `/` in that it rounds up instead\\n     * of rounding down.\\n     */\\n    function ceilDiv(uint256 a, uint256 b) internal pure returns (uint256) {\\n        // (a + b - 1) / b can overflow on addition, so we distribute.\\n        return a == 0 ? 0 : (a - 1) / b + 1;\\n    }\\n\\n    /**\\n     * @notice Calculates floor(x * y / denominator) with full precision. Throws if result overflows a uint256 or denominator == 0\\n     * @dev Original credit to Remco Bloemen under MIT license (https://xn--2-umb.com/21/muldiv)\\n     * with further edits by Uniswap Labs also under MIT license.\\n     */\\n    function mulDiv(uint256 x, uint256 y, uint256 denominator) internal pure returns (uint256 result) {\\n        unchecked {\\n            // 512-bit multiply [prod1 prod0] = x * y. Compute the product mod 2^256 and mod 2^256 - 1, then use\\n            // use the Chinese Remainder Theorem to reconstruct the 512 bit result. The result is stored in two 256\\n            // variables such that product = prod1 * 2^256 + prod0.\\n            uint256 prod0; // Least significant 256 bits of the product\\n            uint256 prod1; // Most significant 256 bits of the product\\n            assembly {\\n                let mm := mulmod(x, y, not(0))\\n                prod0 := mul(x, y)\\n                prod1 := sub(sub(mm, prod0), lt(mm, prod0))\\n            }\\n\\n            // Handle non-overflow cases, 256 by 256 division.\\n            if (prod1 == 0) {\\n                // Solidity will revert if denominator == 0, unlike the div opcode on its own.\\n                // The surrounding unchecked block does not change this fact.\\n                // See https://docs.soliditylang.org/en/latest/control-structures.html#checked-or-unchecked-arithmetic.\\n                return prod0 / denominator;\\n            }\\n\\n            // Make sure the result is less than 2^256. Also prevents denominator == 0.\\n            require(denominator > prod1, \\\"Math: mulDiv overflow\\\");\\n\\n            ///////////////////////////////////////////////\\n            // 512 by 256 division.\\n            ///////////////////////////////////////////////\\n\\n            // Make division exact by subtracting the remainder from [prod1 prod0].\\n            uint256 remainder;\\n            assembly {\\n                // Compute remainder using mulmod.\\n                remainder := mulmod(x, y, denominator)\\n\\n                // Subtract 256 bit number from 512 bit number.\\n                prod1 := sub(prod1, gt(remainder, prod0))\\n                prod0 := sub(prod0, remainder)\\n            }\\n\\n            // Factor powers of two out of denominator and compute largest power of two divisor of denominator. Always >= 1.\\n            // See https://cs.stackexchange.com/q/138556/92363.\\n\\n            // Does not overflow because the denominator cannot be zero at this stage in the function.\\n            uint256 twos = denominator & (~denominator + 1);\\n            assembly {\\n                // Divide denominator by twos.\\n                denominator := div(denominator, twos)\\n\\n                // Divide [prod1 prod0] by twos.\\n                prod0 := div(prod0, twos)\\n\\n                // Flip twos such that it is 2^256 / twos. If twos is zero, then it becomes one.\\n                twos := add(div(sub(0, twos), twos), 1)\\n            }\\n\\n            // Shift in bits from prod1 into prod0.\\n            prod0 |= prod1 * twos;\\n\\n            // Invert denominator mod 2^256. Now that denominator is an odd number, it has an inverse modulo 2^256 such\\n            // that denominator * inv = 1 mod 2^256. Compute the inverse by starting with a seed that is correct for\\n            // four bits. That is, denominator * inv = 1 mod 2^4.\\n            uint256 inverse = (3 * denominator) ^ 2;\\n\\n            // Use the Newton-Raphson iteration to improve the precision. Thanks to Hensel's lifting lemma, this also works\\n            // in modular arithmetic, doubling the correct bits in each step.\\n            inverse *= 2 - denominator * inverse; // inverse mod 2^8\\n            inverse *= 2 - denominator * inverse; // inverse mod 2^16\\n            inverse *= 2 - denominator * inverse; // inverse mod 2^32\\n            inverse *= 2 - denominator * inverse; // inverse mod 2^64\\n            inverse *= 2 - denominator * inverse; // inverse mod 2^128\\n            inverse *= 2 - denominator * inverse; // inverse mod 2^256\\n\\n            // Because the division is now exact we can divide by multiplying with the modular inverse of denominator.\\n            // This will give us the correct result modulo 2^256. Since the preconditions guarantee that the outcome is\\n            // less than 2^256, this is the final result. We don't need to compute the high bits of the result and prod1\\n            // is no longer required.\\n            result = prod0 * inverse;\\n            return result;\\n        }\\n    }\\n\\n    /**\\n     * @notice Calculates x * y / denominator with full precision, following the selected rounding direction.\\n     */\\n    function mulDiv(uint256 x, uint256 y, uint256 denominator, Rounding rounding) internal pure returns (uint256) {\\n        uint256 result = mulDiv(x, y, denominator);\\n        if (rounding == Rounding.Up && mulmod(x, y, denominator) > 0) {\\n            result += 1;\\n        }\\n        return result;\\n    }\\n\\n    /**\\n     * @dev Returns the square root of a number. If the number is not a perfect square, the value is rounded down.\\n     *\\n     * Inspired by Henry S. Warren, Jr.'s \\\"Hacker's Delight\\\" (Chapter 11).\\n     */\\n    function sqrt(uint256 a) internal pure returns (uint256) {\\n        if (a == 0) {\\n            return 0;\\n        }\\n\\n        // For our first guess, we get the biggest power of 2 which is smaller than the square root of the target.\\n        //\\n        // We know that the \\\"msb\\\" (most significant bit) of our target number `a` is a power of 2 such that we have\\n        // `msb(a) <= a < 2*msb(a)`. This value can be written `msb(a)=2**k` with `k=log2(a)`.\\n        //\\n        // This can be rewritten `2**log2(a) <= a < 2**(log2(a) + 1)`\\n        // \\u2192 `sqrt(2**k) <= sqrt(a) < sqrt(2**(k+1))`\\n        // \\u2192 `2**(k/2) <= sqrt(a) < 2**((k+1)/2) <= 2**(k/2 + 1)`\\n        //\\n        // Consequently, `2**(log2(a) / 2)` is a good first approximation of `sqrt(a)` with at least 1 correct bit.\\n        uint256 result = 1 << (log2(a) >> 1);\\n\\n        // At this point `result` is an estimation with one bit of precision. We know the true value is a uint128,\\n        // since it is the square root of a uint256. Newton's method converges quadratically (precision doubles at\\n        // every iteration). We thus need at most 7 iteration to turn our partial result with one bit of precision\\n        // into the expected uint128 result.\\n        unchecked {\\n            result = (result + a / result) >> 1;\\n            result = (result + a / result) >> 1;\\n            result = (result + a / result) >> 1;\\n            result = (result + a / result) >> 1;\\n            result = (result + a / result) >> 1;\\n            result = (result + a / result) >> 1;\\n            result = (result + a / result) >> 1;\\n            return min(result, a / result);\\n        }\\n    }\\n\\n    /**\\n     * @notice Calculates sqrt(a), following the selected rounding direction.\\n     */\\n    function sqrt(uint256 a, Rounding rounding) internal pure returns (uint256) {\\n        unchecked {\\n            uint256 result = sqrt(a);\\n            return result + (rounding == Rounding.Up && result * result < a ? 1 : 0);\\n        }\\n    }\\n\\n    /**\\n     * @dev Return the log in base 2, rounded down, of a positive value.\\n     * Returns 0 if given 0.\\n     */\\n    function log2(uint256 value) internal pure returns (uint256) {\\n        uint256 result = 0;\\n        unchecked {\\n            if (value >> 128 > 0) {\\n                value >>= 128;\\n                result += 128;\\n            }\\n            if (value >> 64 > 0) {\\n                value >>= 64;\\n                result += 64;\\n            }\\n            if (value >> 32 > 0) {\\n                value >>= 32;\\n                result += 32;\\n            }\\n            if (value >> 16 > 0) {\\n                value >>= 16;\\n                result += 16;\\n            }\\n            if (value >> 8 > 0) {\\n                value >>= 8;\\n                result += 8;\\n            }\\n            if (value >> 4 > 0) {\\n                value >>= 4;\\n                result += 4;\\n            }\\n            if (value >> 2 > 0) {\\n                value >>= 2;\\n                result += 2;\\n            }\\n            if (value >> 1 > 0) {\\n                result += 1;\\n            }\\n        }\\n        return result;\\n    }\\n\\n    /**\\n     * @dev Return the log in base 2, following the selected rounding direction, of a positive value.\\n     * Returns 0 if given 0.\\n     */\\n    function log2(uint256 value, Rounding rounding) internal pure returns (uint256) {\\n        unchecked {\\n            uint256 result = log2(value);\\n            return result + (rounding == Rounding.Up && 1 << result < value ? 1 : 0);\\n        }\\n    }\\n\\n    /**\\n     * @dev Return the log in base 10, rounded down, of a positive value.\\n     * Returns 0 if given 0.\\n     */\\n    function log10(uint256 value) internal pure returns (uint256) {\\n        uint256 result = 0;\\n        unchecked {\\n            if (value >= 10 ** 64) {\\n                value /= 10 ** 64;\\n                result += 64;\\n            }\\n            if (value >= 10 ** 32) {\\n                value /= 10 ** 32;\\n                result += 32;\\n            }\\n            if (value >= 10 ** 16) {\\n                value /= 10 ** 16;\\n                result += 16;\\n            }\\n            if (value >= 10 ** 8) {\\n                value /= 10 ** 8;\\n                result += 8;\\n            }\\n            if (value >= 10 ** 4) {\\n                value /= 10 ** 4;\\n                result += 4;\\n            }\\n            if (value >= 10 ** 2) {\\n                value /= 10 ** 2;\\n                result += 2;\\n            }\\n            if (value >= 10 ** 1) {\\n                result += 1;\\n            }\\n        }\\n        return result;\\n    }\\n\\n    /**\\n     * @dev Return the log in base 10, following the selected rounding direction, of a positive value.\\n     * Returns 0 if given 0.\\n     */\\n    function log10(uint256 value, Rounding rounding) internal pure returns (uint256) {\\n        unchecked {\\n            uint256 result = log10(value);\\n            return result + (rounding == Rounding.Up && 10 ** result < value ? 1 : 0);\\n        }\\n    }\\n\\n    /**\\n     * @dev Return the log in base 256, rounded down, of a positive value.\\n     * Returns 0 if given 0.\\n     *\\n     * Adding one to the result gives the number of pairs of hex symbols needed to represent `value` as a hex string.\\n     */\\n    function log256(uint256 value) internal pure returns (uint256) {\\n        uint256 result = 0;\\n        unchecked {\\n            if (value >> 128 > 0) {\\n                value >>= 128;\\n                result += 16;\\n            }\\n            if (value >> 64 > 0) {\\n                value >>= 64;\\n                result += 8;\\n            }\\n            if (value >> 32 > 0) {\\n                value >>= 32;\\n                result += 4;\\n            }\\n            if (value >> 16 > 0) {\\n                value >>= 16;\\n                result += 2;\\n            }\\n            if (value >> 8 > 0) {\\n                result += 1;\\n            }\\n        }\\n        return result;\\n    }\\n\\n    /**\\n     * @dev Return the log in base 256, following the selected rounding direction, of a positive value.\\n     * Returns 0 if given 0.\\n     */\\n    function log256(uint256 value, Rounding rounding) internal pure returns (uint256) {\\n        unchecked {\\n            uint256 result = log256(value);\\n            return result + (rounding == Rounding.Up && 1 << (result << 3) < value ? 1 : 0);\\n        }\\n    }\\n}\\n\",\"keccak256\":\"0xe4455ac1eb7fc497bb7402579e7b4d64d928b846fce7d2b6fde06d366f21c2b3\",\"license\":\"MIT\"},\"@openzeppelin/contracts/utils/math/SignedMath.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.8.0) (utils/math/SignedMath.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Standard signed math utilities missing in the Solidity language.\\n */\\nlibrary SignedMath {\\n    /**\\n     * @dev Returns the largest of two signed numbers.\\n     */\\n    function max(int256 a, int256 b) internal pure returns (int256) {\\n        return a > b ? a : b;\\n    }\\n\\n    /**\\n     * @dev Returns the smallest of two signed numbers.\\n     */\\n    function min(int256 a, int256 b) internal pure returns (int256) {\\n        return a < b ? a : b;\\n    }\\n\\n    /**\\n     * @dev Returns the average of two signed numbers without overflow.\\n     * The result is rounded towards zero.\\n     */\\n    function average(int256 a, int256 b) internal pure returns (int256) {\\n        // Formula from the book \\\"Hacker's Delight\\\"\\n        int256 x = (a & b) + ((a ^ b) >> 1);\\n        return x + (int256(uint256(x) >> 255) & (a ^ b));\\n    }\\n\\n    /**\\n     * @dev Returns the absolute unsigned value of a signed value.\\n     */\\n    function abs(int256 n) internal pure returns (uint256) {\\n        unchecked {\\n            // must be unchecked in order to support `n = type(int256).min`\\n            return uint256(n >= 0 ? n : -n);\\n        }\\n    }\\n}\\n\",\"keccak256\":\"0xf92515413956f529d95977adc9b0567d583c6203fc31ab1c23824c35187e3ddc\",\"license\":\"MIT\"},\"contracts/SupportsInterface.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.17;\\n\\ninterface ISupportsInterface {\\n    function supportsInterface(bytes4 interfaceID) external pure returns (bool);\\n}\\n\\nabstract contract SupportsInterface is ISupportsInterface {\\n    function supportsInterface(bytes4 interfaceID) public pure virtual override returns (bool) {\\n        return interfaceID == type(ISupportsInterface).interfaceId;\\n    }\\n}\\n\",\"keccak256\":\"0xe0acf72daed5a8ef1473f9e7e6ec1c9549baf194c4b4f71e891337cff0b2c35b\",\"license\":\"MIT\"},\"contracts/coinType/Ensip11CoinType.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.17;\\n\\nfunction convertEVMChainIdToCoinType(uint256 chainId) pure returns (uint256) {\\n    return (0x80000000 | chainId) >> 0;\\n}\\n\\nfunction convertCoinTypeToEVMChainId(uint256 coinType) pure returns (uint256) {\\n    return (0x7fffffff & coinType) >> 0;\\n}\\n\",\"keccak256\":\"0x1736a3eb5e414e21e45c8bc7eeafd022de41f69322212693a9958da9f09f2c39\",\"license\":\"MIT\"},\"contracts/verifier/CcipResponseVerifier.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.17;\\n\\nimport {ICcipResponseVerifier} from \\\"./ICcipResponseVerifier.sol\\\";\\nimport {SupportsInterface, ISupportsInterface} from \\\"../SupportsInterface.sol\\\";\\n\\nabstract contract CcipResponseVerifier is ICcipResponseVerifier, SupportsInterface {\\n    /*\\n     *   --------------------------------------------------\\n     *    EVENTS\\n     *   --------------------------------------------------\\n     */\\n\\n    event GraphQlUrlChanged(string newGraphQlUrl);\\n    event OwnerChanged(address newOwner);\\n\\n    /*\\n     *   --------------------------------------------------\\n     *    State Variables\\n     *   --------------------------------------------------\\n     */\\n\\n    /**\\n     * @notice The owner of the contract\\n     * The owner of the contract can set the graphQlUrl and determine a new owner\\n     */\\n    address public owner;\\n\\n    string public graphqlUrl;\\n\\n    /*\\n     *   --------------------------------------------------\\n     *    Modifier\\n     *   --------------------------------------------------\\n     */\\n\\n    modifier onlyOwner() {\\n        require(msg.sender == owner, \\\"only owner\\\");\\n        _;\\n    }\\n\\n    /**\\n     * @notice Set the GraphQL endpoint URL for the contract\\n     * @dev This function can only be called by the current owner.\\n     * @param _graphqlUrl The new GraphQL endpoint URL to be set\\n     */\\n    function setGraphUrl(string memory _graphqlUrl) external onlyOwner {\\n        graphqlUrl = _graphqlUrl;\\n        emit GraphQlUrlChanged(_graphqlUrl);\\n    }\\n\\n    /**\\n     * @notice Set the new owner of the contract\\n     * @dev This function can only be called by the current owner.\\n     * @param _owner The address of the new owner\\n     */\\n    function setOwner(address _owner) external onlyOwner {\\n        owner = _owner;\\n        emit OwnerChanged(_owner);\\n    }\\n\\n    /*\\n     *   --------------------------------------------------\\n     *    Constructor\\n     *   --------------------------------------------------\\n     */\\n\\n    constructor(address _owner, string memory _graphqlUrl) {\\n        owner = _owner;\\n        graphqlUrl = _graphqlUrl;\\n    }\\n\\n    /*\\n     *   --------------------------------------------------\\n     *    External functions\\n     *   --------------------------------------------------\\n     */\\n\\n    /**\\n     * @notice Check if the contract supports the given interface\\n     * @dev This function checks if the contract supports the provided interface by comparing the `interfaceID` with the supported interface IDs.\\n     * @param interfaceID The interface ID to check for support\\n     * @return true if the contract supports the interface, false otherwise\\n     */\\n    function supportsInterface(\\n        bytes4 interfaceID\\n    ) public pure override(SupportsInterface, ISupportsInterface) returns (bool) {\\n        /*\\n         * Supports both ICcipResponseVerifier and ISupportsInterfacef\\n         */\\n        return interfaceID == type(ICcipResponseVerifier).interfaceId || super.supportsInterface(interfaceID);\\n    }\\n\\n    /**\\n     * @notice To support other to be resolved than just bytes it is possible to override this function. In that case the function selector of the overridden function should be returned. The default implementation returns the function selector of the `resolveWithProof` function.\\n     * @return The function selector of the `resolveWithProof` function\\n     */\\n    function onResolveWithProof(bytes calldata, bytes calldata) public pure virtual override returns (bytes4) {\\n        return this.resolveWithProof.selector;\\n    }\\n}\\n\",\"keccak256\":\"0x9f36bf96ed30ed29aa1921e46c2a68b827c0c402046c7336d667bbaab5e43146\",\"license\":\"MIT\"},\"contracts/verifier/ICcipResponseVerifier.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.17;\\nimport {ISupportsInterface} from \\\"../SupportsInterface.sol\\\";\\n\\ninterface ICcipResponseVerifier is ISupportsInterface {\\n    function resolveWithProof(bytes calldata response, bytes calldata extraData) external view returns (bytes memory);\\n\\n    function onResolveWithProof(bytes calldata name, bytes calldata data) external pure returns (bytes4);\\n\\n    function metadata(\\n        bytes calldata name\\n    ) external view returns (string memory, uint256, string memory, uint8, bytes memory, bytes memory);\\n}\\n\",\"keccak256\":\"0x74f5c5afb0097da674c00b833b504acb055c08ed82446909634dd0be04c3e9fb\",\"license\":\"MIT\"},\"contracts/verifier/signature/SignatureCcipVerifier.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.17;\\n\\nimport {CcipResponseVerifier} from \\\"../CcipResponseVerifier.sol\\\";\\nimport {SignatureVerifier} from \\\"./SignatureVerifier.sol\\\";\\nimport {convertEVMChainIdToCoinType} from \\\"../../coinType/Ensip11CoinType.sol\\\";\\n\\n/**\\n * @notice A type specific handler for verifying the validity of data returned by\\n * a gateway that has been signed with a specific private key\\n */ \\ncontract SignatureCcipVerifier is CcipResponseVerifier {\\n    string public name;\\n    address public immutable resolver;\\n\\n    mapping(address => bool) public signers;\\n\\n    event NewOwner(address newOwner);\\n    event NewSigners(address[] signers);\\n    event SignerRemoved(address removedSigner);\\n\\n    constructor(\\n        address _owner,\\n        string memory _graphQlUrl,\\n        string memory _name,\\n        address _resolver,\\n        address[] memory _signers\\n    ) CcipResponseVerifier(_owner, _graphQlUrl) {\\n        name = _name;\\n        resolver = _resolver;\\n\\n        for (uint256 i = 0; i < _signers.length; i++) {\\n            signers[_signers[i]] = true;\\n        }\\n        emit NewSigners(_signers);\\n    }\\n\\n    /**\\n     * @notice Add new signers\\n     * @dev This function can only be called by the current contract owner. It adds the provided addresses as new signers.\\n     * @param _signers An array of addresses representing the new signers to be added\\n     */\\n    function addSigners(address[] memory _signers) external onlyOwner {\\n        for (uint256 i = 0; i < _signers.length; i++) {\\n            signers[_signers[i]] = true;\\n        }\\n        emit NewSigners(_signers);\\n    }\\n\\n    /**\\n     * @notice Remove signers\\n     * @dev This function can only be called by the current contract owner. It removes the provided addresses from the list of authorized signers.\\n     * @param _signers An array of addresses representing the signers to be removed\\n     */\\n    function removeSigners(address[] memory _signers) external onlyOwner {\\n        for (uint256 i = 0; i < _signers.length; i++) {\\n            /*\\n             * Without this if check, it's possible to add a signer to the SignerRemoved Event\\n             * that never was a signer in the first place.\\n             * This may cause failures at indexing services that are trying to delete a non-existing signer...\\n             */\\n            if (signers[_signers[i]]) {\\n                signers[_signers[i]] = false;\\n                emit SignerRemoved(_signers[i]);\\n            }\\n        }\\n    }\\n\\n    /**\\n     * @notice Resolve with Proof\\n     * @dev This function is used to resolve a response with a proof using the SignatureVerifier.\\n     * @param response The response data returned from the SignatureVerifier\\n     * @param extraData Additional data needed for verification\\n     * @return The decoded response data\\n     * Note: It's essential to handle access control mechanisms properly to ensure that only authorized signers can resolve responses with proofs.\\n     */\\n    function resolveWithProof(bytes calldata response, bytes calldata extraData) external view override returns (bytes memory) {\\n        (address signer, bytes memory result) = SignatureVerifier.verify(resolver, extraData, response);\\n        require(signers[signer], \\\"SignatureVerifier: Invalid signature\\\");\\n        /**\\n         * @dev Because this function is meant to be called via staticcall, we need to decode the response data before returning it.\\n         */\\n        bytes memory decodedResponse = abi.decode(result, (bytes));\\n        return decodedResponse;\\n    }\\n\\n    /**\\n     * @notice Get metadata about the CCIP Resolver\\n     * @dev This function provides metadata about the CCIP Resolver, including its name, coin type, GraphQL URL, storage type, and encoded information.\\n     * @return name The name of the resolver (\\\"CCIP RESOLVER\\\")\\n     * @return coinType Resolvers coin type (60 for Ethereum)\\n     * @return graphqlUrl The GraphQL URL used by the resolver\\n     * @return storageType Storage Type (0 for EVM)\\n     * @return storageLocation The storage identifier. For EVM chains, this is the address of the resolver contract.\\n     * @return context The owner of the name. Always returns address(0) since the owner is determined by the erc3668Resolver contract.\\n     */\\n    function metadata(\\n        bytes calldata\\n    ) external view override returns (string memory, uint256, string memory, uint8, bytes memory, bytes memory) {\\n        return (\\n            name, // The name of the resolver\\n            convertEVMChainIdToCoinType(60), // Resolvers coin type => Ethereum\\n            this.graphqlUrl(), // The GraphQL Url\\n            uint8(1), // Storage Type 0 => Offchain Database\\n            \\\"Postgres\\\", // Storage Location => Resolver Address\\n            abi.encodePacked(address(0)) // Context => Owner Address\\n        );\\n    }\\n}\\n\",\"keccak256\":\"0x3e2f58cc6a0817b0556b6861fcc4ccd4bb086f2909bb62bbaea60d7be73e622b\",\"license\":\"MIT\"},\"contracts/verifier/signature/SignatureVerifier.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity 0.8.17;\\n\\nimport {ECDSA} from \\\"@openzeppelin/contracts/utils/cryptography/ECDSA.sol\\\";\\n\\nlibrary SignatureVerifier {\\n    /**\\n     * @dev Generates a hash for signing/verifying.\\n     * @param target: The address the signature is for.(RESOLVER)\\n     * @param request: The original request that was sent.\\n     * @param result: The `result` field of the response (not including the signature part).\\n     */\\n    function makeSignatureHash(address target, uint64 expires, bytes memory request, bytes memory result) internal pure returns (bytes32) {\\n        return keccak256(abi.encodePacked(hex\\\"1900\\\", target, expires, keccak256(request), keccak256(result)));\\n    }\\n\\n    /**\\n     * @dev Verifies a signed message returned from a callback.\\n     * @param resolver: The address the signature is for.(RESOLVER)\\n     * @param request: The original request that was sent.\\n     * @param response: An ABI encoded tuple of `(bytes result, uint64 expires, bytes sig)`, where `result` is the data to return\\n     *        to the caller, and `sig` is the (r,s,v) encoded message signature.\\n     * @return signer: The address that signed this message.\\n     * @return result: The `result` decoded from `response`.\\n     */\\n    function verify(address resolver, bytes calldata request, bytes calldata response) internal view returns (address, bytes memory) {\\n        (bytes memory result, uint64 expires, bytes memory sig) = abi.decode(response, (bytes, uint64, bytes));\\n        address signer = ECDSA.recover(ECDSA.toEthSignedMessageHash(makeSignatureHash(resolver, expires, request, result)), sig);\\n        require(expires >= block.timestamp, \\\"SignatureVerifier: Signature expired\\\");\\n        return (signer, result);\\n    }\\n}\\n\",\"keccak256\":\"0x9eaabc18586a1b059490d68be2b1bd8d792695d388fd25b6bff78bf468cc4ab8\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x60a06040523462000045575b62000023620000196200033c565b93929092620006d7565b604051611861620007e282396080518181816101ea015261113b015261186190f35b6200004e600080fd5b6200000b565b600080fd5b50634e487b7160e01b600052604160045260246000fd5b90601f01601f191681019081106001600160401b038211176200009257604052565b6200009c62000059565b604052565b90620000b8620000b060405190565b928362000070565b565b6001600160a01b031690565b90565b6001600160a01b038116036200005457565b90505190620000b882620000c9565b6020906200010b906001600160401b0381116200010f57601f01601f191690565b0190565b6200011962000059565b601f01601f191690565b60005b838110620001375750506000910152565b818101518382015260200162000126565b929190620000b891620001656200015f83620000ea565b620000a1565b9482865260208601918382011115620001235762000181600080fd5b62000123565b90620000c69181601f82011215620001a6575b60208151910162000148565b620001af600080fd5b6200019a565b60209081906001600160401b038111620001ce57020190565b620001d862000059565b020190565b90929192620001f06200015f82620001b5565b938185526020808601920283019281841162000233575b915b838310620002175750505050565b60208091620002278486620000db565b81520192019162000209565b6200023c600080fd5b62000207565b90620000c69181601f8201121562000261575b602081519101620001dd565b6200026a600080fd5b62000255565b919060a0838203126200032d575b6200028a8184620000db565b92620002ac82602083015160018060401b0381116200031e575b830162000187565b92620000c6620002d284604085015160018060401b0381116200030f575b850162000187565b93620002e28160608601620000db565b608085015190946001600160401b03821162000300575b0162000242565b62000309600080fd5b620002f9565b62000318600080fd5b620002ca565b62000327600080fd5b620002a4565b62000336600080fd5b6200027e565b6200035f62002043803803806200035381620000a1565b92833981019062000270565b9091929394565b50634e487b7160e01b600052602260045260246000fd5b9060016002830492168015620003a4575b60208310146200039a57565b620000b862000366565b91607f16916200038e565b9160001960089290920291821b911b5b9181191691161790565b620000c6620000c6620000c69290565b9190620003ee620000c6620003f793620003c9565b908354620003af565b9055565b620000b891600091620003d9565b81811062000415575050565b80620004256000600193620003fb565b0162000409565b9190601f81116200043c57505050565b62000450620000b893600052602060002090565b906020601f84018190048301931062000474575b6020601f90910104019062000409565b909150819062000464565b9062000489815190565b906001600160401b03821162000561575b620004b282620004ab85546200037d565b856200042c565b602090601f8311600114620004f157620003f7929160009183620004e5575b5050600019600883021c1916906002021790565b015190503880620004d1565b601f198316916200050785600052602060002090565b9260005b81811062000548575091600293918560019694106200052e575b50505002019055565b01516000196008601f8516021c1916905538808062000525565b919360206001819287870151815501950192016200050b565b6200056b62000059565b6200049a565b90620000b8916200047f565b50634e487b7160e01b600052601160045260246000fd5b6001906000198114620005a5570190565b6200010b6200057d565b50634e487b7160e01b600052603260045260246000fd5b9060208091620005d4845190565b811015620005e3575b02010190565b620005ed620005af565b620005dd565b620000c690620000ba906001600160a01b031682565b620000c690620005f3565b620000c69062000609565b906200062b9062000614565b600052602052604060002090565b9060ff90620003bf565b9062000656620000c6620003f792151590565b825462000639565b90620006816200067a62000670845190565b8084529260200190565b9260200190565b9060005b818110620006935750505090565b909192620006bb620006b460019286516001600160a01b0316815260200190565b9460200190565b92910162000685565b6020808252620000c6929101906200065e565b620006f09291620006e891620007c7565b600262000571565b608052620006ff6000620003c9565b6200070c620000c6835190565b8110156200075b5762000755906200074f600162000749600362000742620007358689620005c6565b516001600160a01b031690565b906200061f565b62000643565b62000594565b620006ff565b50620007967fab0b9cc3a46b568cb08d985497cde8ab7e18892d01f58db7dc7f0d2af859b2d7916200078c60405190565b91829182620006c4565b0390a1565b906001600160a01b0390620003bf565b90620007bf620000c6620003f79262000614565b82546200079b565b90620007d9620000b8926000620007ab565b60016200057156fe60806040526004361015610018575b610016600080fd5b005b60003560e01c806301ffc9a71461011c57806304f3bcec1461011357806306fdde031461010a578063077b4e3c1461010157806313af4035146100f85780634062b43f146100ef5780634196c5b7146100e6578063736c0d5b146100dd5780638a596ebe146100d45780638d361e43146100cb5780638da5cb5b146100c2578063e8906a2d146100b95763f4d4d2f80361000e576100b46109f3565b61000e565b506100b46109cc565b506100b46109a2565b506100b4610958565b506100b461082a565b506100b4610764565b506100b46106ce565b506100b46105bc565b506100b4610584565b506100b4610502565b506100b461040f565b506100b46101d3565b506100b4610174565b600080fd5b6001600160e01b031981165b0361012557565b9050359061014a8261012a565b565b90610160916020818303126101635761013d565b90565b61016b600080fd5b61013d565b9052565b50346101a7575b6101a361019161018c36600461014c565b610d0f565b60405191829182901515815260200190565b0390f35b6101af600080fd5b61017b565b60009103126101bf57565b61014a600080fd5b6001600160a01b031690565b5034610225575b6101e53660046101b4565b6101a37f00000000000000000000000000000000000000000000000000000000000000005b6040515b918291826001600160a01b03909116815260200190565b61022d600080fd5b6101da565b50634e487b7160e01b600052600060045260246000fd5b50634e487b7160e01b600052602260045260246000fd5b9060016002830492168015610283575b602083101461027b57565b61014a610249565b91607f1691610270565b805460009392916102aa6102a083610260565b8085529360200190565b91600181169081156102fc57506001146102c357505050565b6102d69192939450600052602060002090565b916000925b8184106102e85750500190565b8054848401526020909301926001016102db565b92949550505060ff1916825215156020020190565b906101609161028d565b601f01601f191690565b50634e487b7160e01b600052604160045260246000fd5b90601f01601f191681019081106001600160401b0382111761035d57604052565b610365610325565b604052565b9061014a6103849261037b60405190565b93848092610311565b038361033c565b610160911561036a5761039c610232565b61036a565b6101606000600261038b565b60005b8381106103c05750506000910152565b81810151838201526020016103b0565b6103f161031b6020936103fa936103e5815190565b80835293849260200190565b958691016103ad565b0190565b6020808252610160929101906103d0565b5034610439575b6104213660046101b4565b6101a361042c6103a1565b6040515b918291826103fe565b610441600080fd5b610416565b909182601f83011215610481575b60208235926001600160401b038411610474575b0192828401116101bf57565b61047c600080fd5b610468565b610489600080fd5b610454565b916040838303126104f5575b6104d76104b98385356001600160401b0381116104e8575b8601610446565b9390946020810135906001600160401b0382116104db575b01610446565b9091565b6104e3600080fd5b6104d1565b6104f0600080fd5b6104b2565b6104fd600080fd5b61049a565b503461053e575b6101a361052361051a36600461048e565b92919091610d6e565b604051918291826001600160e01b0319909116815260200190565b610546600080fd5b610509565b6001600160a01b038116610136565b9050359061014a8261054b565b90610160916020818303121561055a5761057f600080fd5b61055a565b50346105a3575b61059e610599366004610567565b610d06565b604051005b6105ab600080fd5b61058b565b6101606000600161038b565b50346105d9575b6105ce3660046101b4565b6101a361042c6105b0565b6105e1600080fd5b6105c3565b9061014a6105f360405190565b928361033c565b6103fa6020916001600160401b03811161061857601f01601f191690565b61031b610325565b90826000939282370152565b92919061014a9161064461063f836105fa565b6105e6565b94828652602086019183820111156106205761065e600080fd5b610620565b906101609181601f8201121561067f575b60208135910161062c565b610687600080fd5b610674565b90610160916020818303126106c1575b8035906001600160401b0382116106b4575b01610663565b6106bc600080fd5b6106ae565b6106c9600080fd5b61069c565b50346106e8575b61059e6106e336600461068c565b610c81565b6106f0600080fd5b6106d5565b610160906101c7906001600160a01b031682565b610160906106f5565b61016090610709565b9061072590610712565b600052602052604060002090565b610160916008021c5b60ff1690565b906101609154610733565b6101609061075f60039160009261071b565b610742565b5034610781575b6101a361019161077c366004610567565b61074d565b610789600080fd5b61076b565b906104d7916020818303126107b5575b8035906001600160401b0382116104db5701610446565b6107bd600080fd5b61079e565b949061080361016097959361081c956107f66107ee61080f9560c08c01908c60008184039101526103d0565b9260208b0152565b88820360408a01526103d0565b60ff9093166060870152565b84820360808601526103d0565b9160a08184039101526103d0565b5034610861575b6101a361084861084236600461078e565b90611212565b9261085896949692919260405190565b968796876107c2565b610869600080fd5b610831565b602080916001600160401b03811161088557020190565b61088d610325565b020190565b909291926108a261063f8261086e565b93818552602080860192028301928184116108e0575b915b8383106108c75750505050565b602080916108d5848661055a565b8152019201916108ba565b6108e8600080fd5b6108b8565b906101609181601f82011215610909575b602081359101610892565b610911600080fd5b6108fe565b906101609160208183031261094b575b8035906001600160401b03821161093e575b016108ed565b610946600080fd5b610938565b610953600080fd5b610926565b5034610972575b61059e61096d366004610916565b61101f565b61097a600080fd5b61095f565b610160916008021c6101c7565b90610160915461097f565b61016060008061098c565b50346109bf575b6109b43660046101b4565b6101a361020a610997565b6109c7600080fd5b6109a9565b50346109e6575b61059e6109e1366004610916565b610f34565b6109ee600080fd5b6109d3565b5034610a14575b6101a361042c610a0b36600461048e565b9291909161111d565b610a1c600080fd5b6109fa565b610160906101c7565b6101609054610a21565b15610a3b57565b60405162461bcd60e51b815260206004820152600a60248201526937b7363c9037bbb732b960b11b6044820152606490fd5b61014a90610a9833610a92610a856101c76000610a2a565b916001600160a01b031690565b14610a34565b610c43565b9160001960089290920291821b911b5b9181191691161790565b6101606101606101609290565b9190610ad5610160610add93610ab7565b908354610a9d565b9055565b61014a91600091610ac4565b818110610af8575050565b80610b066000600193610ae1565b01610aed565b9190601f8111610b1b57505050565b610b2d61014a93600052602060002090565b906020601f840181900483019310610b4f575b6020601f909101040190610aed565b9091508190610b40565b90610b62815190565b906001600160401b038211610c2c575b610b8682610b808554610260565b85610b0c565b602090601f8311600114610bc157610add929160009183610bb6575b5050600019600883021c1916906002021790565b015190503880610ba2565b601f19831691610bd685600052602060002090565b9260005b818110610c1457509160029391856001969410610bfb575b50505002019055565b01516000196008601f8516021c19169055388080610bf2565b91936020600181928787015181550195019201610bda565b610c34610325565b610b72565b9061014a91610b59565b610c4e816001610c39565b610c7c7f42515f8c831da70a1bc6849e167ec86a5622ae3cf72262fe05ff503e5432d7b79161043060405190565b0390a1565b61014a90610a6d565b61014a90610ca233610a92610a856101c76000610a2a565b610ccd565b906001600160a01b0390610aad565b90610cc6610160610add92610712565b8254610ca7565b610cd8816000610cb6565b610c7c7fa2ea9883a321a3e97b8266c2b078bfeec6d50c711ed71f874a90d500ae2eaf369161020e60405190565b61014a90610c8a565b633cfb793d60e11b6001600160e01b0319821614908115610d2e575090565b6001600160e01b0319166301ffc9a760e01b149050610160565b610d61610d5b6101609263ffffffff1690565b60e01b90565b6001600160e01b03191690565b50505050610d7a600090565b5061016063f4d4d2f8610d48565b61014a90610da033610a92610a856101c76000610a2a565b610ea3565b50634e487b7160e01b600052601160045260246000fd5b6001906000198114610dcc570190565b6103fa610da5565b50634e487b7160e01b600052603260045260246000fd5b9060208091610df8845190565b811015610e06575b02010190565b610e0e610dd4565b610e00565b9060ff90610aad565b90610e2c610160610add92151590565b8254610e13565b90610e53610e4c610e42845190565b8084529260200190565b9260200190565b9060005b818110610e645750505090565b909192610e8a610e8360019286516001600160a01b0316815260200190565b9460200190565b929101610e57565b602080825261016092910190610e33565b610ead6000610ab7565b610eb8610160835190565b811015610efc57610ef790610ef26001610eed6003610ee7610eda8689610deb565b516001600160a01b031690565b9061071b565b610e1c565b610dbc565b610ead565b50610c7c7fab0b9cc3a46b568cb08d985497cde8ab7e18892d01f58db7dc7f0d2af859b2d791610f2b60405190565b91829182610e92565b61014a90610d88565b61014a90610f5533610a92610a856101c76000610a2a565b610f6d565b6101609061073c565b6101609054610f5a565b600090610f7982610ab7565b610f84610160835190565b81101561101a57610fbc90600384610fb0610fab610fa5610eda8689610deb565b8461071b565b610f63565b610fc1575b5050610dbc565b610f79565b610eed610fd592610ee7610eda8689610deb565b610fe2610eda8285610deb565b6110107f3525e22824a8a7df2c9a6029941c824cf95b6447f1e13d5128fd3826d35afe8b9161020e60405190565b0390a13884610fb5565b505050565b61014a90610f3d565b1561102f57565b60405162461bcd60e51b8152602060048201526024808201527f5369676e617475726556657269666965723a20496e76616c6964207369676e616044820152637475726560e01b6064820152608490fd5b92919061014a9161109361063f836105fa565b94828652602086019183820111156103ad576110ad600080fd5b6103ad565b906101609181601f820112156110ce575b602081519101611080565b6110d6600080fd5b6110c3565b9061016091602081830312611110575b8051906001600160401b038211611103575b016110b2565b61110b600080fd5b6110fd565b611118600080fd5b6110eb565b61115f61116d926111689261016096610fab96611138606090565b507f0000000000000000000000000000000000000000000000000000000000000000611437565b9390600361071b565b611028565b6020611177825190565b8183010191016110db565b506040513d6000823e3d90fd5b61073c6101606101609290565b6101c76101606101609290565b6101609061119c565b610170906001600160a01b031660601b90565b6103fa816014936111b2565b6101609061036a565b906111e761063f836105fa565b918252565b6111f660086111da565b67506f73746772657360c01b602082015290565b6101606111ec565b505061121c606090565b50611258600261123461122f603c610ab7565b611311565b92600061124030610712565b634062b43f9061124f60405190565b95869260e01b90565b825260049082905afa9283156112eb575b6000936112c8575b5061127c600161118f565b916112b861128a60006111a9565b916112b361129760405190565b80946112a76020830191826111c5565b9081038252038461033c565b6111d1565b949392916112c461120a565b9190565b6112e491933d8091833e6112dc818361033c565b8101906110db565b9138611271565b6112f3611182565b611269565b6101609061130c6112c46101609460ff1690565b901c90565b610160906113226380000000610ab7565b1761132d600061118f565b906112f8565b6001600160401b038116610136565b9050359061014a82611333565b90916060828403126113b1575b61016061137b8484356001600160401b0381116113a4575b8501610663565b936113898160208601611342565b936040810135906001600160401b0382116106b45701610663565b6113ac600080fd5b611374565b6113b9600080fd5b61135c565b61016091369161062c565b610160610160610160926001600160401b031690565b156113e657565b60405162461bcd60e51b8152602060048201526024808201527f5369676e617475726556657269666965723a205369676e6174757265206578706044820152631a5c995960e21b6064820152608490fd5b926114a16114726114a69361146061146c946112c4979a99611457600090565b5081019061134f565b95829b829a93946113be565b916117cf565b7f19457468657265756d205369676e6564204d6573736167653a0a333200000000600052601c52603c60002090565b6114b8565b916114b142916113c9565b10156113df565b610160916114c59161163f565b919091611500565b50634e487b7160e01b600052602160045260246000fd5b600511156114ee57565b61014a6114cd565b9061014a826114e4565b61150a60006114f6565b611513826114f6565b0361151b5750565b61152560016114f6565b61152e826114f6565b036115785760405162461bcd60e51b815260206004820152601860248201527f45434453413a20696e76616c6964207369676e617475726500000000000000006044820152606490fd5b61158260026114f6565b61158b826114f6565b036115d55760405162461bcd60e51b815260206004820152601f60248201527f45434453413a20696e76616c6964207369676e6174757265206c656e677468006044820152606490fd5b6115e86115e260036114f6565b916114f6565b146115ef57565b60405162461bcd60e51b815260206004820152602260248201527f45434453413a20696e76616c6964207369676e6174757265202773272076616c604482015261756560f01b6064820152608490fd5b90805161164f6112c46041610ab7565b03611671576104d7916020820151906060604084015193015160001a906116c0565b505061167d60006111a9565b90600290565b61016090610ab7565b6116bc61014a946116b56060949897956116ab608086019a6000870152565b60ff166020850152565b6040830152565b0152565b9192916116cc83611683565b6116f86112c47f7fffffffffffffffffffffffffffffff5d576e7357a4501ddfe92f46681b20a0610ab7565b1161176a5761171860009360209561170f60405190565b9485948561168c565b838052039060015afa1561175d575b60005190600091611737836111a9565b6001600160a01b0381166001600160a01b0383161461175557509190565b925050600190565b611765611182565b611727565b5050505061177860006111a9565b90600390565b610170906001600160401b031660c01b90565b926117c960086103fa946117c9601460209998966117c16117ba8c99601960f81b815260020190565b80926111b2565b01809261177e565b01918252565b61181061181c936117de600090565b506117f16117ea825190565b9160200190565b20946117fe6117ea825190565b20604051958694602086019485611791565b9081038252038261033c565b6118276117ea825190565b209056fea26469706673582212208292d626b2fcbcb73bd200d6c04bb0e730fc79d459c4850cee4f2e7289c3b04d64736f6c63430008110033",
+  "deployedBytecode": "0x60806040526004361015610018575b610016600080fd5b005b60003560e01c806301ffc9a71461011c57806304f3bcec1461011357806306fdde031461010a578063077b4e3c1461010157806313af4035146100f85780634062b43f146100ef5780634196c5b7146100e6578063736c0d5b146100dd5780638a596ebe146100d45780638d361e43146100cb5780638da5cb5b146100c2578063e8906a2d146100b95763f4d4d2f80361000e576100b46109f3565b61000e565b506100b46109cc565b506100b46109a2565b506100b4610958565b506100b461082a565b506100b4610764565b506100b46106ce565b506100b46105bc565b506100b4610584565b506100b4610502565b506100b461040f565b506100b46101d3565b506100b4610174565b600080fd5b6001600160e01b031981165b0361012557565b9050359061014a8261012a565b565b90610160916020818303126101635761013d565b90565b61016b600080fd5b61013d565b9052565b50346101a7575b6101a361019161018c36600461014c565b610d0f565b60405191829182901515815260200190565b0390f35b6101af600080fd5b61017b565b60009103126101bf57565b61014a600080fd5b6001600160a01b031690565b5034610225575b6101e53660046101b4565b6101a37f00000000000000000000000000000000000000000000000000000000000000005b6040515b918291826001600160a01b03909116815260200190565b61022d600080fd5b6101da565b50634e487b7160e01b600052600060045260246000fd5b50634e487b7160e01b600052602260045260246000fd5b9060016002830492168015610283575b602083101461027b57565b61014a610249565b91607f1691610270565b805460009392916102aa6102a083610260565b8085529360200190565b91600181169081156102fc57506001146102c357505050565b6102d69192939450600052602060002090565b916000925b8184106102e85750500190565b8054848401526020909301926001016102db565b92949550505060ff1916825215156020020190565b906101609161028d565b601f01601f191690565b50634e487b7160e01b600052604160045260246000fd5b90601f01601f191681019081106001600160401b0382111761035d57604052565b610365610325565b604052565b9061014a6103849261037b60405190565b93848092610311565b038361033c565b610160911561036a5761039c610232565b61036a565b6101606000600261038b565b60005b8381106103c05750506000910152565b81810151838201526020016103b0565b6103f161031b6020936103fa936103e5815190565b80835293849260200190565b958691016103ad565b0190565b6020808252610160929101906103d0565b5034610439575b6104213660046101b4565b6101a361042c6103a1565b6040515b918291826103fe565b610441600080fd5b610416565b909182601f83011215610481575b60208235926001600160401b038411610474575b0192828401116101bf57565b61047c600080fd5b610468565b610489600080fd5b610454565b916040838303126104f5575b6104d76104b98385356001600160401b0381116104e8575b8601610446565b9390946020810135906001600160401b0382116104db575b01610446565b9091565b6104e3600080fd5b6104d1565b6104f0600080fd5b6104b2565b6104fd600080fd5b61049a565b503461053e575b6101a361052361051a36600461048e565b92919091610d6e565b604051918291826001600160e01b0319909116815260200190565b610546600080fd5b610509565b6001600160a01b038116610136565b9050359061014a8261054b565b90610160916020818303121561055a5761057f600080fd5b61055a565b50346105a3575b61059e610599366004610567565b610d06565b604051005b6105ab600080fd5b61058b565b6101606000600161038b565b50346105d9575b6105ce3660046101b4565b6101a361042c6105b0565b6105e1600080fd5b6105c3565b9061014a6105f360405190565b928361033c565b6103fa6020916001600160401b03811161061857601f01601f191690565b61031b610325565b90826000939282370152565b92919061014a9161064461063f836105fa565b6105e6565b94828652602086019183820111156106205761065e600080fd5b610620565b906101609181601f8201121561067f575b60208135910161062c565b610687600080fd5b610674565b90610160916020818303126106c1575b8035906001600160401b0382116106b4575b01610663565b6106bc600080fd5b6106ae565b6106c9600080fd5b61069c565b50346106e8575b61059e6106e336600461068c565b610c81565b6106f0600080fd5b6106d5565b610160906101c7906001600160a01b031682565b610160906106f5565b61016090610709565b9061072590610712565b600052602052604060002090565b610160916008021c5b60ff1690565b906101609154610733565b6101609061075f60039160009261071b565b610742565b5034610781575b6101a361019161077c366004610567565b61074d565b610789600080fd5b61076b565b906104d7916020818303126107b5575b8035906001600160401b0382116104db5701610446565b6107bd600080fd5b61079e565b949061080361016097959361081c956107f66107ee61080f9560c08c01908c60008184039101526103d0565b9260208b0152565b88820360408a01526103d0565b60ff9093166060870152565b84820360808601526103d0565b9160a08184039101526103d0565b5034610861575b6101a361084861084236600461078e565b90611212565b9261085896949692919260405190565b968796876107c2565b610869600080fd5b610831565b602080916001600160401b03811161088557020190565b61088d610325565b020190565b909291926108a261063f8261086e565b93818552602080860192028301928184116108e0575b915b8383106108c75750505050565b602080916108d5848661055a565b8152019201916108ba565b6108e8600080fd5b6108b8565b906101609181601f82011215610909575b602081359101610892565b610911600080fd5b6108fe565b906101609160208183031261094b575b8035906001600160401b03821161093e575b016108ed565b610946600080fd5b610938565b610953600080fd5b610926565b5034610972575b61059e61096d366004610916565b61101f565b61097a600080fd5b61095f565b610160916008021c6101c7565b90610160915461097f565b61016060008061098c565b50346109bf575b6109b43660046101b4565b6101a361020a610997565b6109c7600080fd5b6109a9565b50346109e6575b61059e6109e1366004610916565b610f34565b6109ee600080fd5b6109d3565b5034610a14575b6101a361042c610a0b36600461048e565b9291909161111d565b610a1c600080fd5b6109fa565b610160906101c7565b6101609054610a21565b15610a3b57565b60405162461bcd60e51b815260206004820152600a60248201526937b7363c9037bbb732b960b11b6044820152606490fd5b61014a90610a9833610a92610a856101c76000610a2a565b916001600160a01b031690565b14610a34565b610c43565b9160001960089290920291821b911b5b9181191691161790565b6101606101606101609290565b9190610ad5610160610add93610ab7565b908354610a9d565b9055565b61014a91600091610ac4565b818110610af8575050565b80610b066000600193610ae1565b01610aed565b9190601f8111610b1b57505050565b610b2d61014a93600052602060002090565b906020601f840181900483019310610b4f575b6020601f909101040190610aed565b9091508190610b40565b90610b62815190565b906001600160401b038211610c2c575b610b8682610b808554610260565b85610b0c565b602090601f8311600114610bc157610add929160009183610bb6575b5050600019600883021c1916906002021790565b015190503880610ba2565b601f19831691610bd685600052602060002090565b9260005b818110610c1457509160029391856001969410610bfb575b50505002019055565b01516000196008601f8516021c19169055388080610bf2565b91936020600181928787015181550195019201610bda565b610c34610325565b610b72565b9061014a91610b59565b610c4e816001610c39565b610c7c7f42515f8c831da70a1bc6849e167ec86a5622ae3cf72262fe05ff503e5432d7b79161043060405190565b0390a1565b61014a90610a6d565b61014a90610ca233610a92610a856101c76000610a2a565b610ccd565b906001600160a01b0390610aad565b90610cc6610160610add92610712565b8254610ca7565b610cd8816000610cb6565b610c7c7fa2ea9883a321a3e97b8266c2b078bfeec6d50c711ed71f874a90d500ae2eaf369161020e60405190565b61014a90610c8a565b633cfb793d60e11b6001600160e01b0319821614908115610d2e575090565b6001600160e01b0319166301ffc9a760e01b149050610160565b610d61610d5b6101609263ffffffff1690565b60e01b90565b6001600160e01b03191690565b50505050610d7a600090565b5061016063f4d4d2f8610d48565b61014a90610da033610a92610a856101c76000610a2a565b610ea3565b50634e487b7160e01b600052601160045260246000fd5b6001906000198114610dcc570190565b6103fa610da5565b50634e487b7160e01b600052603260045260246000fd5b9060208091610df8845190565b811015610e06575b02010190565b610e0e610dd4565b610e00565b9060ff90610aad565b90610e2c610160610add92151590565b8254610e13565b90610e53610e4c610e42845190565b8084529260200190565b9260200190565b9060005b818110610e645750505090565b909192610e8a610e8360019286516001600160a01b0316815260200190565b9460200190565b929101610e57565b602080825261016092910190610e33565b610ead6000610ab7565b610eb8610160835190565b811015610efc57610ef790610ef26001610eed6003610ee7610eda8689610deb565b516001600160a01b031690565b9061071b565b610e1c565b610dbc565b610ead565b50610c7c7fab0b9cc3a46b568cb08d985497cde8ab7e18892d01f58db7dc7f0d2af859b2d791610f2b60405190565b91829182610e92565b61014a90610d88565b61014a90610f5533610a92610a856101c76000610a2a565b610f6d565b6101609061073c565b6101609054610f5a565b600090610f7982610ab7565b610f84610160835190565b81101561101a57610fbc90600384610fb0610fab610fa5610eda8689610deb565b8461071b565b610f63565b610fc1575b5050610dbc565b610f79565b610eed610fd592610ee7610eda8689610deb565b610fe2610eda8285610deb565b6110107f3525e22824a8a7df2c9a6029941c824cf95b6447f1e13d5128fd3826d35afe8b9161020e60405190565b0390a13884610fb5565b505050565b61014a90610f3d565b1561102f57565b60405162461bcd60e51b8152602060048201526024808201527f5369676e617475726556657269666965723a20496e76616c6964207369676e616044820152637475726560e01b6064820152608490fd5b92919061014a9161109361063f836105fa565b94828652602086019183820111156103ad576110ad600080fd5b6103ad565b906101609181601f820112156110ce575b602081519101611080565b6110d6600080fd5b6110c3565b9061016091602081830312611110575b8051906001600160401b038211611103575b016110b2565b61110b600080fd5b6110fd565b611118600080fd5b6110eb565b61115f61116d926111689261016096610fab96611138606090565b507f0000000000000000000000000000000000000000000000000000000000000000611437565b9390600361071b565b611028565b6020611177825190565b8183010191016110db565b506040513d6000823e3d90fd5b61073c6101606101609290565b6101c76101606101609290565b6101609061119c565b610170906001600160a01b031660601b90565b6103fa816014936111b2565b6101609061036a565b906111e761063f836105fa565b918252565b6111f660086111da565b67506f73746772657360c01b602082015290565b6101606111ec565b505061121c606090565b50611258600261123461122f603c610ab7565b611311565b92600061124030610712565b634062b43f9061124f60405190565b95869260e01b90565b825260049082905afa9283156112eb575b6000936112c8575b5061127c600161118f565b916112b861128a60006111a9565b916112b361129760405190565b80946112a76020830191826111c5565b9081038252038461033c565b6111d1565b949392916112c461120a565b9190565b6112e491933d8091833e6112dc818361033c565b8101906110db565b9138611271565b6112f3611182565b611269565b6101609061130c6112c46101609460ff1690565b901c90565b610160906113226380000000610ab7565b1761132d600061118f565b906112f8565b6001600160401b038116610136565b9050359061014a82611333565b90916060828403126113b1575b61016061137b8484356001600160401b0381116113a4575b8501610663565b936113898160208601611342565b936040810135906001600160401b0382116106b45701610663565b6113ac600080fd5b611374565b6113b9600080fd5b61135c565b61016091369161062c565b610160610160610160926001600160401b031690565b156113e657565b60405162461bcd60e51b8152602060048201526024808201527f5369676e617475726556657269666965723a205369676e6174757265206578706044820152631a5c995960e21b6064820152608490fd5b926114a16114726114a69361146061146c946112c4979a99611457600090565b5081019061134f565b95829b829a93946113be565b916117cf565b7f19457468657265756d205369676e6564204d6573736167653a0a333200000000600052601c52603c60002090565b6114b8565b916114b142916113c9565b10156113df565b610160916114c59161163f565b919091611500565b50634e487b7160e01b600052602160045260246000fd5b600511156114ee57565b61014a6114cd565b9061014a826114e4565b61150a60006114f6565b611513826114f6565b0361151b5750565b61152560016114f6565b61152e826114f6565b036115785760405162461bcd60e51b815260206004820152601860248201527f45434453413a20696e76616c6964207369676e617475726500000000000000006044820152606490fd5b61158260026114f6565b61158b826114f6565b036115d55760405162461bcd60e51b815260206004820152601f60248201527f45434453413a20696e76616c6964207369676e6174757265206c656e677468006044820152606490fd5b6115e86115e260036114f6565b916114f6565b146115ef57565b60405162461bcd60e51b815260206004820152602260248201527f45434453413a20696e76616c6964207369676e6174757265202773272076616c604482015261756560f01b6064820152608490fd5b90805161164f6112c46041610ab7565b03611671576104d7916020820151906060604084015193015160001a906116c0565b505061167d60006111a9565b90600290565b61016090610ab7565b6116bc61014a946116b56060949897956116ab608086019a6000870152565b60ff166020850152565b6040830152565b0152565b9192916116cc83611683565b6116f86112c47f7fffffffffffffffffffffffffffffff5d576e7357a4501ddfe92f46681b20a0610ab7565b1161176a5761171860009360209561170f60405190565b9485948561168c565b838052039060015afa1561175d575b60005190600091611737836111a9565b6001600160a01b0381166001600160a01b0383161461175557509190565b925050600190565b611765611182565b611727565b5050505061177860006111a9565b90600390565b610170906001600160401b031660c01b90565b926117c960086103fa946117c9601460209998966117c16117ba8c99601960f81b815260020190565b80926111b2565b01809261177e565b01918252565b61181061181c936117de600090565b506117f16117ea825190565b9160200190565b20946117fe6117ea825190565b20604051958694602086019485611791565b9081038252038261033c565b6118276117ea825190565b209056fea26469706673582212208292d626b2fcbcb73bd200d6c04bb0e730fc79d459c4850cee4f2e7289c3b04d64736f6c63430008110033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "addSigners(address[])": {
+        "details": "This function can only be called by the current contract owner. It adds the provided addresses as new signers.",
+        "params": {
+          "_signers": "An array of addresses representing the new signers to be added"
+        }
+      },
+      "metadata(bytes)": {
+        "details": "This function provides metadata about the CCIP Resolver, including its name, coin type, GraphQL URL, storage type, and encoded information.",
+        "returns": {
+          "_0": "name The name of the resolver (\"CCIP RESOLVER\")",
+          "_1": "coinType Resolvers coin type (60 for Ethereum)",
+          "_2": "graphqlUrl The GraphQL URL used by the resolver",
+          "_3": "storageType Storage Type (0 for EVM)",
+          "_4": "storageLocation The storage identifier. For EVM chains, this is the address of the resolver contract.",
+          "_5": "context The owner of the name. Always returns address(0) since the owner is determined by the erc3668Resolver contract."
+        }
+      },
+      "onResolveWithProof(bytes,bytes)": {
+        "returns": {
+          "_0": "The function selector of the `resolveWithProof` function"
+        }
+      },
+      "removeSigners(address[])": {
+        "details": "This function can only be called by the current contract owner. It removes the provided addresses from the list of authorized signers.",
+        "params": {
+          "_signers": "An array of addresses representing the signers to be removed"
+        }
+      },
+      "resolveWithProof(bytes,bytes)": {
+        "details": "This function is used to resolve a response with a proof using the SignatureVerifier.",
+        "params": {
+          "extraData": "Additional data needed for verification",
+          "response": "The response data returned from the SignatureVerifier"
+        },
+        "returns": {
+          "_0": "The decoded response data Note: It's essential to handle access control mechanisms properly to ensure that only authorized signers can resolve responses with proofs."
+        }
+      },
+      "setGraphUrl(string)": {
+        "details": "This function can only be called by the current owner.",
+        "params": {
+          "_graphqlUrl": "The new GraphQL endpoint URL to be set"
+        }
+      },
+      "setOwner(address)": {
+        "details": "This function can only be called by the current owner.",
+        "params": {
+          "_owner": "The address of the new owner"
+        }
+      },
+      "supportsInterface(bytes4)": {
+        "details": "This function checks if the contract supports the provided interface by comparing the `interfaceID` with the supported interface IDs.",
+        "params": {
+          "interfaceID": "The interface ID to check for support"
+        },
+        "returns": {
+          "_0": "true if the contract supports the interface, false otherwise"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "addSigners(address[])": {
+        "notice": "Add new signers"
+      },
+      "metadata(bytes)": {
+        "notice": "Get metadata about the CCIP Resolver"
+      },
+      "onResolveWithProof(bytes,bytes)": {
+        "notice": "To support other to be resolved than just bytes it is possible to override this function. In that case the function selector of the overridden function should be returned. The default implementation returns the function selector of the `resolveWithProof` function."
+      },
+      "owner()": {
+        "notice": "The owner of the contract The owner of the contract can set the graphQlUrl and determine a new owner"
+      },
+      "removeSigners(address[])": {
+        "notice": "Remove signers"
+      },
+      "resolveWithProof(bytes,bytes)": {
+        "notice": "Resolve with Proof"
+      },
+      "setGraphUrl(string)": {
+        "notice": "Set the GraphQL endpoint URL for the contract"
+      },
+      "setOwner(address)": {
+        "notice": "Set the new owner of the contract"
+      },
+      "supportsInterface(bytes4)": {
+        "notice": "Check if the contract supports the given interface"
+      }
+    },
+    "notice": "A type specific handler for verifying the validity of data returned by a gateway that has been signed with a specific private key",
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 7663,
+        "contract": "contracts/verifier/signature/SignatureCcipVerifier.sol:SignatureCcipVerifier",
+        "label": "owner",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 7665,
+        "contract": "contracts/verifier/signature/SignatureCcipVerifier.sol:SignatureCcipVerifier",
+        "label": "graphqlUrl",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_string_storage"
+      },
+      {
+        "astId": 8282,
+        "contract": "contracts/verifier/signature/SignatureCcipVerifier.sol:SignatureCcipVerifier",
+        "label": "name",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_string_storage"
+      },
+      {
+        "astId": 8288,
+        "contract": "contracts/verifier/signature/SignatureCcipVerifier.sol:SignatureCcipVerifier",
+        "label": "signers",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_mapping(t_address,t_bool)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_mapping(t_address,t_bool)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => bool)",
+        "numberOfBytes": "32",
+        "value": "t_bool"
+      },
+      "t_string_storage": {
+        "encoding": "bytes",
+        "label": "string",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

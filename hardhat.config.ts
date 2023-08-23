@@ -13,6 +13,13 @@ import 'hardhat-deploy';
 import 'hardhat-storage-layout';
 import 'hardhat-tracer';
 import 'solidity-coverage';
+import dotenv from 'dotenv'
+
+// Load environment variables from .env file. Suppress warnings using silent
+// if this file is missing. dotenv will never modify any environment variables
+// that have already been set.
+// https://github.com/motdotla/dotenv
+dotenv.config()
 
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY;
 const OPTIMISTIC_ETHERSCAN_API_KEY = process.env.OPTIMISTIC_ETHERSCAN_API_KEY;
@@ -29,6 +36,10 @@ const hardhat =
                   url: 'http://localhost:8545',
               },
           };
+
+
+export const defaultResolverPath       = '../ENS-Bedrock-Resolver/deployments/'
+
 
 module.exports = {
     defaultNetwork: 'hardhat',
@@ -92,5 +103,13 @@ module.exports = {
         except: [],
         spacing: 2,
         pretty: true,
+    },
+    external: {
+      deployments: {
+        localhost:         [defaultResolverPath + "/localhost"],
+        goerli:            [defaultResolverPath + "/goerli"],
+        "optimism-goerli": [defaultResolverPath + "/optimism-goerli"],
+        mainnet:           [defaultResolverPath + "/mainnet"],
+      },
     },
 };
